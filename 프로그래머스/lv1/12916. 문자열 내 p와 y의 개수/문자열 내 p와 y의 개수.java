@@ -12,7 +12,6 @@ class Solution {
        int y = Collections.frequency(text,"y");
 
        if (S==y) return true;
-       if (S!=y) return false;
     return false;
     } 
 }
