@@ -19,13 +19,11 @@ class Main {
         //최대값 찾기
         int max = Collections.max(Arr);
 
-        Integer[] array = Arr.toArray(new Integer[0]);
-
         //평균을 담을 변수 선언
         double avg = 0;
         // i/max*100 반복문
-        for (int i=0; i<array.length; i++){
-            avg += (double)array[i]/max*100;
+        for (int i=0; i<Arr.size(); i++){
+            avg += (double)Arr.get(i)/max*100;
         }
         System.out.println(avg/n);
     }
