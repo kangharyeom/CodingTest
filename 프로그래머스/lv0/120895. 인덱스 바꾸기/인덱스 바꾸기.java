@@ -4,9 +4,9 @@ class Solution {
         String answer = "";
         String[] arr = my_string.split("");
         
-        String temp = arr[num1];
+        String idx = arr[num1];
         arr[num1] = arr[num2];
-        arr[num2] = temp;
+        arr[num2] = idx;
 
         answer = String.join("", arr);
         return answer;
