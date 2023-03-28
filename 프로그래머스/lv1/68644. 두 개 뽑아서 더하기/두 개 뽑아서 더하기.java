@@ -9,6 +9,6 @@ class Solution {
             }
         }
 
-        return set.stream().sorted().mapToInt(Integer::intValue).toArray();
+        return set.stream().sorted().mapToInt(i -> i).toArray();
     }
 }
