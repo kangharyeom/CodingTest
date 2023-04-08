@@ -5,13 +5,11 @@ class Solution {
             answer = "0";
             return answer;
         }
-        int a = Integer.parseInt(bin1,2);
-        int b = Integer.parseInt(bin2,2);
-        int c = a+b;
+        int a = Integer.parseInt(bin1,2)+ Integer.parseInt(bin2,2);       
         
-        while(c > 0){
-            answer = String.valueOf(c % 2) + answer;
-            c /= 2;
+        while(a > 0){
+            answer = String.valueOf(a % 2) + answer;
+            a /= 2;
         };
         return answer;
     }
