@@ -1,7 +1,7 @@
 import java.util.*;
 class Solution {
     public ArrayList<String> solution(String myString) {
-        String[] arr = myString.split("[x]");
+        String[] arr = myString.split("x");
         Arrays.sort(arr);
         ArrayList<String> answer = new ArrayList<>();
         
