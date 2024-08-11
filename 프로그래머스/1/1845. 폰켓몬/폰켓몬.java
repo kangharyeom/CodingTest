@@ -1,20 +1,17 @@
 import java.util.*;
 class Solution {
     public int solution(int[] nums) {
-        int sameCount = 0;
-        int halfNums = nums.length/2 ;
-
-        HashSet<Integer> dupl = new HashSet<>();
-        for(Integer num:nums){
-            dupl.add(num);
+        int totalNums = nums.length;
+        int canbeTakeNums = totalNums/2;
+        HashSet<Integer> numsHashSet = new HashSet<>();
+        for(int num:nums){
+            numsHashSet.add(num);
         }
         
-        sameCount = dupl.size();
-        
-        if(sameCount>halfNums){
-            return halfNums;
+        if(numsHashSet.size()>=canbeTakeNums){
+            return canbeTakeNums;
+        } else {
+            return numsHashSet.size();
         }
-        
-        return sameCount;
     }
 }
